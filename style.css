@@ -1,0 +1,98 @@
+* {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgba(87, 190, 255, 1.00);
+            background-image: url("https://i.ibb.co/x8GdbQW/blue-bubbles-2-wallpaper-1280x1024-Copy.jpg");
+            background-size: cover;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+        #wrapper {
+            margin: 0 auto;
+            width: 80%;
+            -webkit-user-select: none;
+               -moz-user-select: none;
+                -ms-user-select: none;
+                    user-select: none;
+        }
+
+        header {
+            margin: 0 auto;
+            text-align:center;
+        }
+
+        header h2 {
+            margin-top: 50px;
+            font: normal 38px/1 "Finger Paint", Helvetica, sans-serif;
+            color: rgba(55, 55, 55, 1.00);
+            text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        header p {
+            padding: 20px 0;
+            font-size: 18px;
+            color: #901d7e;
+        }
+
+        #partsDiv {
+            border: 1px solid white;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.31);
+            padding: 10px;
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            align-content: space-around;
+            overflow: hidden;
+        }
+
+        #partsDiv img {
+            cursor: pointer;
+            flex: 0 1 auto;
+        }
+
+        #monsterDiv {
+            border: 1px solid white;
+            padding-top:40px ;
+            border-radius: 10px;
+            text-align: center;
+            position: relative;
+        }
+
+        #monsterDiv img {
+            margin: 0 4%;
+            z-index: -1;
+            transition: transform .2s;
+        }
+
+        .itemMove {
+            position: absolute;
+        }
+
+        .btn {
+            float: right;
+            outline: none;
+            border: 1px solid #fff;
+            padding: 10px 20px 10px 20px;
+            margin: 20px 0;
+            background-color: #901d7e;
+            border-radius: 10px;
+            color: #ffffff;
+            font-size: 16px;
+            transition: background-color .2s;
+        }
+
+        .btn:hover {
+            background-color: #1858af;
+        }
+
+        .active {
+            transform: rotate(2deg);
+            transition: transform .2s;
+        }
